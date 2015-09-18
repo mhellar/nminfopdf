@@ -7,16 +7,16 @@
 * Frame Count : 270  
 * Location : /Users/markhellar/Downloads/opencv-3.0.0-rc1/samples/cpp/tutorial_code/HighGUI/video-input-psnr-ssim/video  
 * Duration : 00:00:11;06  
-* Bit Rate : 845 Kbps  
-* Codec ID : XVID  
-* Color Space : YUV  
-* Chroma Subsampling : 4:2:0  
-* Frame Size : 720x528  
-* Aspect Ratio : 4:3  
-* Framerate : 23.976 fps  
-* Bit Depth : 8 bits  
-* Compression Type : Lossy  
-* Color Space : YUV  
+* Video Bit Rate : 845 Kbps  
+* Video Codec ID : XVID  
+* Video Color Space : YUV  
+* Video Chroma Subsampling : 4:2:0  
+* Video Frame Size : 720x528  
+* Video Aspect Ratio : 4:3  
+* Video Framerate : 23.976 fps  
+* Video Bit Depth : 8 bits  
+* Video Compression Type : Lossy  
+* Video Color Space : YUV  
 * Audio Channels : 2 channels  
 * Audio Codec : AC3  
 * Audio Sample Rate : 48.0 KHz  
