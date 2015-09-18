@@ -34,12 +34,12 @@ exec(chkSum + process.argv[2], function(err, stdout, stderr) {
         console.log(doc.File.track[1].Display_aspect_ratio[1]);
         console.log(doc.File.track[1].Frame_rate[1]);
         console.log(doc.File.track[1].Bit_depth[1]);
-        console.log(doc.File.track[1].Compression_mode[0]);
+        // console.log(doc.File.track[1].Compression_mode[0]);
         console.log(doc.File.track[1].Color_space);
         console.log(doc.File.track[2].Channel_s_[1]);
         console.log(doc.File.track[2].Codec[1]);
         console.log(doc.File.track[2].Sampling_rate[1]);
-        console.log(doc.File.track[2].Bit_rate[1]);
+        // console.log(doc.File.track[2].Bit_rate[1]);
 
 
         var stream = fs.createWriteStream("my_file.md");
@@ -48,7 +48,7 @@ exec(chkSum + process.argv[2], function(err, stdout, stderr) {
             stream.write("* Last Modification Date : " + doc.File.track[0].File_last_modification_date + "  \n");
             stream.write("* Checksum Algorithm : SHA-1  \n");
             stream.write("* Checksum Digest : " + digest + "  \n");
-            stream.write("* Writing Application : " + doc.File.track[0].Writing_application[1] + "  \n");
+            // stream.write("* Writing Application : " + doc.File.track[0].Writing_application[1] + "  \n");
             stream.write("* File Extension : " + doc.File.track[0].File_extension + "  \n");
             stream.write("* Frame Count : " + doc.File.track[0].Frame_count + "  \n");
             stream.write("* Location : " + doc.File.track[0].Folder_name + "  \n");
@@ -61,12 +61,12 @@ exec(chkSum + process.argv[2], function(err, stdout, stderr) {
             stream.write("* Video Aspect Ratio : " + doc.File.track[1].Display_aspect_ratio[1] + "  \n");
             stream.write("* Video Framerate : " + doc.File.track[1].Frame_rate[1] + "  \n");
             stream.write("* Video Bit Depth : " + doc.File.track[1].Bit_depth[1] + "  \n");
-            stream.write("* Video Compression Type : " + doc.File.track[1].Compression_mode[0] + "  \n");
+            // stream.write("* Video Compression Type : " + doc.File.track[1].Compression_mode[0] + "  \n");
             stream.write("* Video Color Space : " + doc.File.track[1].Color_space + "  \n");
             stream.write("* Audio Channels : " + doc.File.track[2].Channel_s_[1] + "  \n");
             stream.write("* Audio Codec : " + doc.File.track[2].Codec[1] + "  \n");
             stream.write("* Audio Sample Rate : " + doc.File.track[2].Sampling_rate[1] + "  \n");
-            stream.write("* Audio Bit Rate : " + doc.File.track[2].Bit_rate[1] + "  \n");
+            // stream.write("* Audio Bit Rate : " + doc.File.track[2].Bit_rate[1] + "  \n");
             stream.end();
             stream.on('finish', function() {
                 var systream = fs.createReadStream("my_file.md")
