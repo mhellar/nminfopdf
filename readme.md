@@ -1,6 +1,6 @@
 #nminfopdf
 
-A tool to get MediaInfo data, A SHA-1 checksum and render it as a pdf document  
+A tool to get select MediaInfo data, SHA-1 checksum and render it as a pdf document  
 
 
 ## installation
