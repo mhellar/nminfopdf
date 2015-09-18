@@ -10,4 +10,6 @@ A tool to get MediaInfo data and render as pdf
 ## usage
 * node app.js *videofilename*
 
+## Screenshot
+
 ![image](https://raw.githubusercontent.com/mhellar/nminfopdf/master/pdf.png)
